@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 10:54:09 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/08 12:38:16 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/07/08 12:43:27 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,4 +56,27 @@ int	ft_isalnum(int c)
 //     else
 //         printf("%c is an alphanumeric character.", c); 
 //     return 0;
+// }
+
+// int	main(void)
+// {
+// 	int	ret;
+
+// 	ret = ft_isalnum('0');
+// 	printf("for '0' return is %d\n", ret);
+// 	ret = ft_isalnum('9');
+// 	printf("for '9' return is %d\n", ret);
+// 	ret = ft_isalnum('a');
+// 	printf("for 'a' return is %d\n", ret);
+// 	ret = ft_isalnum('z');
+// 	printf("for 'z' return is %d\n", ret);
+// 	ret = ft_isalnum('A');
+// 	printf("for 'A' return is %d\n", ret);
+// 	ret = ft_isalnum('Z');
+// 	printf("for 'Z' return is %d\n", ret);
+// 	ret = ft_isalnum(' ');
+// 	printf("for ' ' return is %d\n", ret);
+// 	ret = ft_isalnum(')');
+// 	printf("for ')' return is %d\n", ret);
+// 	return (0);
 // }
