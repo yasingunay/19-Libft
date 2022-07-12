@@ -1,42 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/12 07:58:34 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/12 10:45:11 by ygunay           ###   ########.fr       */
+/*   Created: 2022/07/12 10:35:34 by ygunay            #+#    #+#             */
+/*   Updated: 2022/07/12 10:45:48 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef LIBFT_H
+# define LIBFT_H
 
-int	ft_isprint(int c)
-{
-	if (c >= 0 && c <= 31)
-	{
-		return (0);
-	}
-	else
-		return (1);
-}
+# include <stdio.h>
 
-// int main()
+int		ft_isalnum(int c);
+int		ft_isalpha(int c);
+int		ft_isdigit(int c);
+int		ft_isprint(int c);
+int		ft_isascii(int c);
 
-// {
-
-// int result;
-
-// result= ft_isprint('\n');
-// printf("%d\n",result);
-
-// result= ft_isprint(' ');
-// printf("%d\n",result);
-
-// result= ft_isprint('a');
-// printf("%d\n",result);
-
-// result= ft_isprint('9');
-// printf("%d\n",result);
-// }
+#endif

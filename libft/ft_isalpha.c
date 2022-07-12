@@ -6,11 +6,11 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 16:12:30 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/06 17:21:48 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/07/12 10:44:48 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_isalpha(int c)
 {
