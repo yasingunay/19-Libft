@@ -1,25 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/12 10:35:34 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/12 11:56:22 by ygunay           ###   ########.fr       */
+/*   Created: 2022/07/12 12:18:02 by ygunay            #+#    #+#             */
+/*   Updated: 2022/07/12 12:33:12 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include "libft.h"
 
-# include <stdio.h>
-# include <string.h>
-
-int		ft_isalnum(int c);
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-int		ft_isprint(int c);
-int		ft_isascii(int c);
-
-#endif
+size_t	ft_strlen(const char*str)
+{
+}
