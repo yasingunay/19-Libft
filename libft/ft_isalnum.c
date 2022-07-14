@@ -6,9 +6,22 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 10:54:09 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/12 10:44:37 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/07/14 07:34:07 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+//The isalnum() function checks whether the argument passed is 
+//an alphanumeric character (alphabet or number) or not.
+
+// int isalnum(int argument);
+
+// It is defined in the ctype.h header file.
+
+// isalnum() Parameters : argument - a character
+
+// isalnum() Return Value
+// Returns 1 if argument is an alphanumeric character.
+// Returns 0 if argument is neither an alphabet nor a digit.
 
 #include "libft.h"
 

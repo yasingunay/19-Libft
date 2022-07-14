@@ -6,9 +6,23 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 07:58:34 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/12 10:45:11 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/07/14 07:53:11 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+*	LIBRARY
+*	#include <ctype.h>
+*	DESCRIPTION
+*	The isprint() function tests for any printing character, 
+*	including space (' '). The value of the argument must be representable as an 
+*	unsigned char or the value of EOF.
+*	PARAMETERS
+*	#1. The character to test.
+*	RETURN VALUES
+*	The isprint() function returns zero if the character tests false and returns 
+*	non-zero if the character tests true.
+*/
 
 #include "libft.h"
 

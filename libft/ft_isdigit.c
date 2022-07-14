@@ -6,9 +6,21 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/07 10:55:40 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/12 10:45:08 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/07/14 07:52:36 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+*	LIBRARY
+*	#include <ctype.h>
+*	DESCRIPTION
+*	The isdigit() function tests for a decimal digit character.
+*	PARAMETERS
+*	#1. The character to test.
+*	RETURN VALUES
+*	The isdigit() function returns zero if the character tests false and 
+*	returns non-zero if the character tests true.
+*/
 
 #include "libft.h"
 

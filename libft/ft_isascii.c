@@ -6,9 +6,22 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/08 13:00:46 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/12 10:45:03 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/07/14 07:52:02 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+*	LIBRARY
+*	#include <ctype.h>
+*	DESCRIPTION
+*	The isascii() function tests for an ASCII character, which is any character 
+*	between 0 and octal 0177 inclusive.
+*	PARAMETERS
+*	#1. The character to test.
+*	RETURN VALUES
+*	The isascii() function returns zero if the character tests false and returns 
+*	non-zero if the character tests true.
+*/
 
 #include "libft.h"
 
