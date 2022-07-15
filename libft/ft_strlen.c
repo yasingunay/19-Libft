@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 12:18:02 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/14 07:53:58 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/07/15 11:46:48 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,12 @@
 
 #include "libft.h"
 
-size_t	ft_strlen(const char*str)
+size_t	ft_strlen(const char *s)
 {
 	size_t	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (s[i])
 		i++;
 	return (i);
 }
