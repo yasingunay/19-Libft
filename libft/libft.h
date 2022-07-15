@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 10:35:34 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/14 17:18:08 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/07/15 10:54:44 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,6 @@ int		ft_tolower(int c);
 size_t	ft_strlen(const char*str);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dst_size);
 //size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
+char	*strchr(const char *s, int c);
 
 #endif
