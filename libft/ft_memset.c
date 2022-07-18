@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 07:59:01 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/18 08:38:49 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/07/18 10:34:15 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ RETURN VALUES
 #include "libft.h"
 
 void	*ft_memset(void *b, int c, size_t len)
-
 {
 	int				i;
 	unsigned char	*str;
