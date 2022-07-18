@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 10:35:34 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/15 11:43:00 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/07/18 08:38:16 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,9 @@ int		ft_tolower(int c);
 size_t	strlen(const char *s);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dst_size);
 //size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
-char	*strchr(const char *s, int c);
-char	*strrchr(const char *s, int c);
+char	*ft_strchr(const char *s, int c);
+char	*ft_strrchr(const char *s, int c);
+void	ft_bzero(void *s, size_t n);
+void	*ft_memset(void *b, int c, size_t len);
 
 #endif
