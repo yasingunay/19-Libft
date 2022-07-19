@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 10:35:34 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/19 09:47:43 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/07/19 09:50:10 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,9 @@
 # define LIBFT_H
 
 # include <stdio.h>
-# include <string.h>
+# include <unistd.h>
 # include <stdlib.h>
+# include <string.h>
 
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
