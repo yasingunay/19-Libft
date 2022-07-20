@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 07:59:01 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/18 10:34:15 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/07/20 11:11:16 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ RETURN VALUES
 
 void	*ft_memset(void *b, int c, size_t len)
 {
-	int				i;
+	size_t			i;
 	unsigned char	*str;
 
 i = 0;
@@ -42,7 +42,7 @@ str = (unsigned char *)b;
 //    strcpy(str,"yasingunay");
 //    puts(str);
 
-//    ft_memset(str,'$',3);
+//    ft_memset(str,56,3);
 //    puts(str);
 //    return(0);
 // }
