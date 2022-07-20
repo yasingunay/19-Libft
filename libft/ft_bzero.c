@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 07:46:51 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/18 11:05:42 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/07/20 12:26:08 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,28 +17,24 @@ If n is zero, bzero() does nothing.
 
 #include "libft.h"
 
-void	*ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-	int				i;
-	unsigned char	*str;
+	size_t	i;
+	char	*str;
 
 i = 0;
-str = (unsigned char *)s;
+str = (char *)s;
 	while (i < n)
 	{
-	str[i] = '0';
+	str[i] = 0;
 	i ++;
 	}
-	return (s);
 }
 
 // int main () {
-//    char str[15];
+//    char str[]="yasingunay";
 
-//    strcpy(str,"yasingunay");
-//    puts(str);
-
-//    ft_bzero(str,3);
-//    puts(str);
+//   bzero(str+3,3);
+// printf("%s",str);   
 //    return(0);
 // }
