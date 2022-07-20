@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 07:58:34 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/14 07:53:11 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/07/20 16:15:26 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,32 +25,36 @@
 */
 
 #include "libft.h"
+//#include <ctype.h>
 
 int	ft_isprint(int c)
 {
-	if (c >= 0 && c <= 31)
+	if (c >= 32 && c <= 126)
 	{
-		return (0);
+		return (1);
 	}
 	else
-		return (1);
+		return (0);
 }
 
 // int main()
 
 // {
 
-// int result;
+// int result_ft;
+// int result_or;
 
-// result= ft_isprint('\n');
-// printf("%d\n",result);
+// result_ft= ft_isprint(113);
+// printf("%d\n",result_ft);
+// result_or= isprint(113);
+// printf("%d\n",result_or);
 
-// result= ft_isprint(' ');
-// printf("%d\n",result);
+// // result= ft_isprint(' ');
+// // printf("%d\n",result);
 
-// result= ft_isprint('a');
-// printf("%d\n",result);
+// // result= ft_isprint('a');
+// // printf("%d\n",result);
 
-// result= ft_isprint('9');
-// printf("%d\n",result);
+// // result= ft_isprint('9');
+// // printf("%d\n",result);
 // }
