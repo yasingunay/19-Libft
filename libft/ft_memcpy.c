@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 10:40:21 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/22 11:54:27 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/07/22 12:10:20 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
      dst.  If dst and src overlap, behavior is undefined.  Applications in
      which dst and src might overlap should use memmove(3) instead.
 RETURN VALUES
-     The memcpy() function returns the original value of dst.
+     The memcpy() function returns the original   value of dst.
 */
 
 #include "libft.h"
@@ -28,6 +28,14 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 
 	pdst = (char *)dst;
 	psrc = (char *)src;
+	if (dst == src)
+	{
+		return (dst);
+	}
+	if (dst == 0 && src == 0)
+	{
+		return (0);
+	}
 	i = 0;
 	while (i < n)
 	{
