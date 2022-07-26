@@ -5,56 +5,54 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/20 16:45:22 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/20 16:45:28 by ygunay           ###   ########.fr       */
+/*   Created: 2022/07/26 09:38:32 by ygunay            #+#    #+#             */
+/*   Updated: 2022/07/26 10:06:25 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+*	LIBRARY
+*	#include <stdlib.h>
+*	DESCRIPTION
+*	The calloc() function contiguously allocates enough space for count objects 
+*	that are size bytes of memory each and returns a pointer to the allocated 
+*	memory.  The allocated memory is filled with bytes of value zero.
+*	PARAMETERS
+*	#1. The count of objects to allocate.
+*	#2. The size of bytes in each object.
+*	RETURN VALUES
+*	If successful, calloc() function returns a pointer to allocated memory. 
+*	If there is an error, they return a NULL pointer.
+*/
 
 #include "libft.h"
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	char	*ptr;
-	size_t	i;
+	void	*ptr;
 
-	i = 0;
-	ptr = (char *)malloc(count * size);
-	if (NULL == ptr)
-		return (NULL);
-	while (i < count * size)
-	{
-		ptr[i] = 0;
-		++i;
-	}
+	ptr = malloc(count * size);
+	if (ptr == 0)
+		return (ptr);
+	ft_bzero(ptr, count * size);
 	return (ptr);
 }
 
-// int	main(void)
-// {
-// 	int size = 8539;
+// #include <stdio.h>
+// #include <stdlib.h>
 
-// 	void * d1 = ft_calloc(size, sizeof(int));
-// 	void * d2 = calloc(size, sizeof(int));
-// 	if (memcmp(d1, d2, size * sizeof(int)))
-// 		printf("fail\n");
-// 	free(d1);
-// 	free(d2);
-// }
-// int	main(void)
+// int main(void)
 // {
-// 	size_t	i;
-// 	size_t	num;
-// 	int		*ptr;
+//   int *ip, id;
 
-// 	i = 0;
-// 	num = 8539;
-// 	ptr = ft_calloc(num, sizeof(num));
-// 	while (i < num)
-// 	{
-// 		write(1, &ptr[i], 1);
-// 		write(1, "\n", 1);
-// 		++i;
-// 	}
-// 	free(ptr);
-// 	return (0);
+//   ip = (int *) ft_calloc(5, sizeof(int));
+
+//   for (id=0; id<5; id++) {
+//        *(ip+id) = (id+1) * 10;
+//        printf("%p adresindeki değer: %d\n", (ip+id), *(ip+id));
+//   }
+
+//   free(ip);
+
+//   return 0;
 // }
