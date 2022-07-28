@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 11:58:29 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/28 12:20:36 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/07/28 12:25:13 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@
 *	#1. the integer to convert.
 *	RETURN VALUES
 *	The string representing the integer. NULL if the allocation fails.
+INT_MIN	Minimum value for a variable of type int.	-2147483648
+INT_MAX	Maximum value for a variable of type int.	2147483647
 */
 
 #include "libft.h"
