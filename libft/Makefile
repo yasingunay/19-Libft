@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    makefile                                           :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/19 09:59:04 by ygunay            #+#    #+#              #
-#    Updated: 2022/07/19 09:59:07 by ygunay           ###   ########.fr        #
+#    Updated: 2022/08/01 11:57:56 by ygunay           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -47,8 +47,19 @@ SRCS	= ft_isalpha.c \
 			ft_putendl_fd.c \
 			ft_putnbr_fd.c \
 
+SRCS_b	= ft_lstnew.c \
+			ft_lstadd_front.c \
+			ft_lstsize.c \
+			ft_lstlast.c \
+			ft_lstadd_back.c \
+			ft_lstdelone.c \
+			ft_lstclear.c \
+			ft_lstiter.c \
+			ft_lstmap.c \
 
 OBJS	= ${SRCS:.c=.o}
+
+OBJS_b	= ${SRCS_b:.c=.o}
 
 INCS	= .
 
@@ -57,11 +68,11 @@ GCC		= gcc
 RM		= rm -f
 CFLAGS	= -Wall -Wextra -Werror
 
-%.o : %.c 
+%.o : %.c
 			${GCC} ${CFLAGS} -c $< -o ${<:.c=.o} -I ${INCS}
 
 ${NAME}:	${OBJS}
-			${LIB} ${NAME} ${OBJS} 
+			${LIB} ${NAME} ${OBJS}
 
 all:		${NAME}
 
