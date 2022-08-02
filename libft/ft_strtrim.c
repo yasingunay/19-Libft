@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/27 10:32:27 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/27 15:58:33 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/08/02 09:43:56 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,7 @@ the beginning and the end of the string.
 
 #include "libft.h"
 
-static int
-	ft_set_control(char c, char const *set)
+static int	ft_set_control(char c, char const *set)
 {
 	size_t	i;
 
@@ -34,8 +33,7 @@ static int
 	return (0);
 }
 
-char
-	*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*str;
 	size_t	i;
