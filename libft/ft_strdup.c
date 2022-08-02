@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/26 11:15:51 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/26 11:47:11 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/08/02 10:08:28 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_strdup(const char *s)
 	size_t	i;
 	size_t	size;
 
-	size = strlen(s) + 1;
+	size = ft_strlen(s) + 1;
 	dst = (char *) malloc (size * sizeof (char));
 	if (!dst)
 	{
