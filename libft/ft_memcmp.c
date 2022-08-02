@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 18:18:23 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/18 18:40:44 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/08/02 09:51:29 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	{
 		if (str1[i] != str2[i])
 			return (str1[i] - str2[i]);
-	i ++;
+	i++;
 	}
 	return (0);
 }
