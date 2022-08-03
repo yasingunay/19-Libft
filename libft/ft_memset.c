@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 07:59:01 by ygunay            #+#    #+#             */
-/*   Updated: 2022/08/03 20:54:20 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/08/03 20:56:51 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,12 @@ RETURN VALUES
 void	*ft_memset(void *b, int c, size_t len)
 {
 	size_t			i;
-	unsigned char	*str;
+	char			*str;
 	unsigned char	x;
 
 	i = 0;
 	x = (unsigned char)c;
-	str = (unsigned char *)b;
+	str = (char *)b;
 	while (i < len)
 	{
 		str[i] = x;
