@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 07:46:51 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/20 12:26:08 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/08/03 18:57:09 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,19 +22,23 @@ void	ft_bzero(void *s, size_t n)
 	size_t	i;
 	char	*str;
 
-i = 0;
-str = (char *)s;
-	while (i < n)
+	i = 0;
+	str = (char *)s;
+	while (str[i] != '\0' && i < n)
 	{
-	str[i] = 0;
-	i ++;
+		str[i] = 0;
+		i ++;
 	}
 }
 
 // int main () {
 //    char str[]="yasingunay";
+// 	char str2[]="yasingunay";
 
-//   bzero(str+3,3);
-// printf("%s",str);   
+//   ft_bzero(str+5,0);
+// printf("ft %s\n",str);   
+
+//  bzero(str2+5,0);
+// printf("org %s\n",str2);
 //    return(0);
 // }
