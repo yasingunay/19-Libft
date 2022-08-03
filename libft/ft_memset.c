@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 07:59:01 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/20 11:11:16 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/08/03 20:54:20 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,24 +25,31 @@ void	*ft_memset(void *b, int c, size_t len)
 {
 	size_t			i;
 	unsigned char	*str;
+	unsigned char	x;
 
-i = 0;
-str = (unsigned char *)b;
+	i = 0;
+	x = (unsigned char)c;
+	str = (unsigned char *)b;
 	while (i < len)
 	{
-	str[i] = c;
-	i ++;
+		str[i] = x;
+		i++;
 	}
 	return (b);
 }
 
-// int main () {
-//    char str[15];
+// int main(void)
+// {
+// char str[]="yasingunay";
+// char str2[]="yasingunay";
 
-//    strcpy(str,"yasingunay");
-//    puts(str);
+// ft_memset(str, 52, 2);
+// printf("ft %s\n",str);
 
-//    ft_memset(str,56,3);
-//    puts(str);
-//    return(0);
+// memset(str2, 52, 2);
+// printf("or %s\n",str2);
+
+// return (0);
 // }
+
+// char *str is maybe unsigned char * str???	
