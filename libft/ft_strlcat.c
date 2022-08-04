@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 17:46:22 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/25 17:48:05 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/08/04 19:29:08 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,24 +28,58 @@
 */
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t	c;
-	size_t	d;
+	size_t	i;
+	size_t	len_dst;
+	size_t	len_src;
 
-	if (dstsize <= ft_strlen(dst))
-		return (dstsize + ft_strlen(src));
-	c = ft_strlen(dst);
-	d = 0;
-	while (src[d] != 0 && c + 1 < dstsize)
+	i = 0;
+	len_dst = 0;
+	len_src = 0;
+	len_dst = ft_strlen(dst);
+	len_src = ft_strlen(src);
+	if (size <= len_dst)
+		return (size + len_src);
+	while (src[i] != 0 && i < (size - len_dst - 1))
 	{
-		dst[c] = src[d];
-		c++;
-		d++;
+		dst[len_dst + i] = src[i];
+		i++;
 	}
-	dst[c] = 0;
-	return (ft_strlen(dst) + ft_strlen(&src[d]));
+	dst[len_dst + i] = '\0';
+	return (len_dst + len_src);
 }
+
+// void test(int size)
+// {
+//     char string[] = "yasingunay"; // source
+//     char buffer[100] = "hello"; // dst
+//     int r;
+
+//     r = strlcat(buffer,string,size);
+
+//     printf("or Copied '%s' into '%s', length %d\n",string,buffer,r);
+
+//   char string2[] = "yasingunay";
+//     char buffer2[100]= "hello";
+//     int r2;
+
+//     r2 = ft_strlcat(buffer2,string2,size);
+
+//     printf("ft Copied '%s' into '%s', length %d\n\n",string2,buffer2,r2);
+// }
+
+// int main()
+// {
+//  	test(20);
+//     test(9);
+//     test(6);
+// 		test(5);
+//     test(4);
+//     test(1);
+//     test(0);
+//     return(0);
+// }
 
 // int main()
 // {
