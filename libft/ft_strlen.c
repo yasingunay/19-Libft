@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 12:18:02 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/15 11:46:48 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/08/04 07:58:23 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,16 @@ size_t	ft_strlen(const char *s)
 	size_t	i;
 
 	i = 0;
-	while (s[i])
+	while (s[i] != '\0')
 		i++;
 	return (i);
 }
 
-// int main()
+// int main(void)
 // {
-// char name[]="yasin";
-// printf("%lu\n",ft_strlen(name));
+// char str[]="yasin";
+// char str2[]="yasin";
+// printf("%lu\n",strlen(str));
+// printf("%lu\n",ft_strlen(str2));
 // return (0);
 // }

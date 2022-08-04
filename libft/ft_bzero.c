@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 07:46:51 by ygunay            #+#    #+#             */
-/*   Updated: 2022/08/04 07:41:14 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/08/04 07:44:03 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,4 +41,9 @@ void	ft_bzero(void *s, size_t n)
 //  bzero(str2+2,3);
 // printf("org %s\n",str2);
 //    return(0);
+// }
+
+// void	ft_bzero(void *s, size_t n)
+// {
+// 	ft_memset(s, 0, n);
 // }
