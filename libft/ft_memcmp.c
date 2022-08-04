@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 18:18:23 by ygunay            #+#    #+#             */
-/*   Updated: 2022/08/02 09:51:29 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/08/04 10:30:18 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	i = 0;
 	str1 = (unsigned char *)s1;
 	str2 = (unsigned char *)s2;
-	while (i < n)
+	while (n--)
 	{
 		if (str1[i] != str2[i])
 			return (str1[i] - str2[i]);
@@ -46,34 +46,11 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	return (0);
 }
 
-// int main () {
-//    char str1[15];
-//    char str2[15];
-//    int ret;
-
-//    memcpy(str1, "abcdef", 6);
-//    memcpy(str2, "ABCDEF", 6);
-
-//    ret = ft_memcmp(str1, str2, 5);
-
-//    if(ret > 0) {
-//       printf("str2 is less than str1");
-//    } else if(ret < 0) {
-//       printf("str1 is less than str2");
-//    } else {
-//       printf("str1 is equal to str2");
-//    }
-//    return(0);
-// }
-
-// int	main(void)
+// int main(void)
 // {
-// 	const char	buffer1[] = "t\200a";
-// 	const char	buffer2[] = "t\0a";
-// 	const char	buffer3[] = "t\200a";
-// 	const char	buffer4[] = "t\0a";
-
-// 	printf("ret(ft) is %d\n", ft_memcmp(buffer1, buffer2, 3));
-// 	printf("ret(or) is %d\n", memcmp(buffer3, buffer4, 3));
-// 	return (0);
+// char s1[]="yasin";
+// char s2[]="yasim";
+// printf("or %d\n", memcmp(s1,s2,4));
+// printf("ft %d\n", ft_memcmp(s1,s2,4));
+// return (0);
 // }
