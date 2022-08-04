@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 10:40:21 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/22 12:10:20 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/08/04 11:13:08 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,16 +28,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 
 	pdst = (char *)dst;
 	psrc = (char *)src;
-	if (dst == src)
-	{
-		return (dst);
-	}
-	if (dst == 0 && src == 0)
-	{
-		return (0);
-	}
 	i = 0;
-	while (i < n)
+	while (n--)
 	{
 		pdst[i] = psrc[i];
 		i++;
@@ -45,15 +37,13 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	return (dst);
 }
 
-// int		main(void)
+// int main(void)
 // {
-// 	char	dst[] = "123456789";
-// 	char	src[] = "hello";
-// 	char	*ret;
-// 	char	*ret2;
-// 	ret = ft_memcpy(dst, src, 5);
-// 	ret2 = memcpy(dst, src, 5);
-// 	printf("new dest(ft): %s\n", ret);
-// 	printf("new dest(or): %s\n", ret2);
-// 	return (0);
+// char dst[]="";
+// char src[]="";
+// printf("or %s\n", memcpy(dst,src,2));
+// char dst2[]="";
+// char src2[]="";
+// printf("ft %s\n", ft_memcpy(dst2,src2,2));
+// return (0);
 // }
