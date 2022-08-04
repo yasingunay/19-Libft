@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 10:40:21 by ygunay            #+#    #+#             */
-/*   Updated: 2022/08/04 11:13:08 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/08/04 11:27:37 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	char	*pdst;
 	char	*psrc;
 
+	if (!dst && !src)
+		return (0);
 	pdst = (char *)dst;
 	psrc = (char *)src;
 	i = 0;
