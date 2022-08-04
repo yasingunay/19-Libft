@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/19 10:13:52 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/25 07:34:37 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/08/04 12:56:23 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,10 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	char		*pdst;
 	const char	*psrc;
 
-	pdst = dst;
-	psrc = src;
+	pdst = (char *)dst;
+	psrc = (char *)src;
+	if (!pdst && !psrc)
+		return (NULL);
 	if (dst > src)
 		while (len--)
 			pdst[len] = psrc[len];
@@ -47,17 +49,12 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 //line 40 check if 'dst' is stored before 'src'
 //after line 41 copies the values of 'src' to 'dst' front to back
 
-// int		main(void)
+// int main(void)
 // {
-// 	char	dst[50] = "I am going from Delhi to Gorakhpur";
-// 	char	src[50] = "I am going from Delhi to Gorakhpur";
-// 	char	*ret;
-// 	char	*ret2;
-// 	ret = ft_memmove(dst+11, src+5, 29);
-// 	ret2 = memmove(dst+11, src+5, 29);
-// 	printf("new dest(ft): %s\n", ret);
-// 	printf("new dest(or): %s\n", ret2);
-// 	return (0);
+// char str[]="123456789";
+// char str2[]="123456789";
+// //printf("memcpy %s\n",memcpy(str+3,str,5) );
+// printf("or %s\n",memmove(str+3,str,0) );
+// printf("ft %s\n",memmove(str2+3,str2,0) );
+// return 0;
 // }
-
-// https://aticleworld.com/memcpy-vs-memmove/
