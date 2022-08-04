@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 17:46:22 by ygunay            #+#    #+#             */
-/*   Updated: 2022/08/04 19:29:08 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/08/04 19:32:54 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,28 +78,5 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 //     test(4);
 //     test(1);
 //     test(0);
-//     return(0);
-// }
-
-// int main()
-// {
-//     char first[] = "yasin";
-//     char last[] = "gunay123";
-//     int r;
-//     int size = 4;
-//     char buffer[size];
-
-//     strcpy(buffer,first);
-//     r = ft_strlcat(buffer,last,size);
-
-//     puts(buffer);
-//     printf("Value returned: %d\n",r);
-//     if( r > size )
-//         puts("String truncated");
-//     else
-//         puts("String was fully copied");
-
-// 	printf("%s\n",buffer);
-
 //     return(0);
 // }
