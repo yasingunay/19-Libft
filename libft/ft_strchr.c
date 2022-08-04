@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/15 09:44:47 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/20 17:24:47 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/08/04 16:53:40 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,16 +33,11 @@ char	*ft_strchr(const char *s, int c)
 	return ((char *)s);
 }
 
-// int main () {
-//    const char str[] = "yasin.gunay.123";
-//    const char ch = ',';
-//    char *ret1;
-// char *ret2;
-
-//    ret1 = strchr(str, ch);
-// ret2=ft_strchr(str, ch);
-
-//    printf("String after |%c| is - |%s|\n", ch, ret1);
-// printf("String after |%c| is - |%s|\n", ch, ret2);
-//    return(0);
+// int main(void)
+// {
+// char str[]="yasingunay";
+// char str2[]="yasingunay";
+// printf("or %s\n", strchr(str,'\0'));
+// printf("ft %s\n", ft_strchr(str2,'\0'));
+// return (0);
 // }
