@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 16:37:13 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/14 11:48:08 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/08/04 17:42:04 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,16 +49,27 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dst_size)
 	return (len);
 }
 
-// int main()
-
+// void test(int size)
 // {
-// char source[]= "yasin";
-// char dest[10];
-// int ret;
+//     char string[] = "yasingunay";
+//     char buffer[100];
+//     int r;
+//     r = strlcpy(buffer,string,size);
+//     printf("or Copied '%s' into '%s', length %d\n",string,buffer,r);
 
-// ret=ft_strlcpy(dest,source,4);
+//   	char string2[] = "yasingunay";
+//     char buffer2[100];
+//     int r2;
+//     r2 = ft_strlcpy(buffer2,string2,size);
+//     printf("ft Copied '%s' into '%s', length %d\n",string2,buffer2,r2);
+// }
 
-//  printf("Copied '%s' into '%s', length %d\n",source, dest,ret);
+// int main()
+// {
+//     test(10);
+//     test(5);
+//     test(1);
+//     test(0);
 
-// return (0);
+//     return(0);
 // }
