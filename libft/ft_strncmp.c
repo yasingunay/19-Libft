@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 15:08:53 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/18 16:08:21 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/08/05 10:08:50 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,29 +43,15 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return (0);
 }
 
-// int	main(void)
+// int main(void)
 // {
-// 	printf("TEST 1\n");
-// 	printf("ret(ft) is %d\n", ft_strncmp("salut", "salut", 5));
-// 	printf("ret(or) is %d\n", strncmp("salut", "salut", 5));
-// 	printf("TEST 2\n");
-// 	printf("ret(ft) is %d\n", ft_strncmp("test", "testss", 7));
-// 	printf("ret(or) is %d\n", strncmp("test", "testss", 7));
-// 	printf("TEST 3\n");
-// 	printf("ret(ft) is %d\n", ft_strncmp("testss", "test", 7));
-// 	printf("ret(or) is %d\n", strncmp("testss", "test", 7));
-// 	printf("TEST 4\n");
-// 	printf("ret(ft) is %d\n", ft_strncmp("abcdefgh", "abcdwxyz", 4));
-// 	printf("ret(or) is %d\n", strncmp("abcdefgh", "abcdwxyz", 4));
-// 	printf("TEST 5\n");
-// 	printf("ret(ft) is %d\n", ft_strncmp("zyxbcdefgh", "abcdwxyz", 0));
-// 	printf("ret(or) is %d\n", strncmp("zyxbcdefgh", "abcdwxyz", 0));
-// 	printf("TEST 6\n");
-// 	printf("ret(ft) is %d\n", ft_strncmp("abcdefgh", "", 0));
-// 	printf("ret(or) is %d\n", strncmp("abcdefgh", "", 0));
-// 	printf("TEST 7\n");
-// 	printf("ret(ft) is %d\n", ft_strncmp("test\200", "test\0", 6));
-// 	printf("ret(or) is %d\n", strncmp("test\200", "test\0", 6));
+// char s1[]="b"; // 98
+// char s2[]="a"; // 97 
 
-// 	return (0);
+// int ret = strncmp(s1,s2,0);
+// printf("or %d\n", ret);
+
+// int ret2 = ft_strncmp(s1,s2,0);
+// printf("ft %d\n", ret2);
+// return (0);
 // }
