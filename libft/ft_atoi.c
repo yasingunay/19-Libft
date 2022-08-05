@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/25 08:06:57 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/25 10:17:49 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/08/05 11:18:48 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,13 +65,15 @@ int	ft_atoi(const char *str)
 
 // int	main(void)
 // {
-// 	char	str[] = "9223372036854775808";
+// 	char	str[] = "40";
+// 	char	str2[] = "40";
 // 	int		ret;
 // 	int		ret2;
 
-// 	ret = ft_atoi(str);
-// 	printf("ft_atoi %d\n",ret);
-// 	ret2 = atoi(str);
-// 	printf("atoi  %d\n", ret2);
+// 	ret = atoi(str);
+// 	printf("or  %d\n", ret);
+
+// 	ret2 = ft_atoi(str2);
+// 	printf("ft %d\n",ret2);
 // 	return (0);
 // }
