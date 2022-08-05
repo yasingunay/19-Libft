@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/26 11:15:51 by ygunay            #+#    #+#             */
-/*   Updated: 2022/08/02 10:08:28 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/08/05 12:01:32 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,7 @@ char	*ft_strdup(const char *s)
 	size = ft_strlen(s) + 1;
 	dst = (char *) malloc (size * sizeof (char));
 	if (!dst)
-	{
 		return (NULL);
-	}
 	i = 0;
 	while (s[i])
 	{
@@ -53,4 +51,15 @@ char	*ft_strdup(const char *s)
 // p2=ft_strdup(p1);
 // printf("duplicated string is : %s\n", p2);
 // return (0);
+// }
+
+// int main(void)
+// {
+// char str[]="yasin";
+// printf("or %s\n",strdup(str));
+
+// char str2[]="yasin";
+// printf("ft %s\n",ft_strdup(str2));
+
+//  return 0;
 // }
