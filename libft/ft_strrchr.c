@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/19 10:21:29 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/25 18:33:51 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/08/05 08:21:02 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,20 +14,28 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	unsigned char	*str;
-	unsigned char	x;
-	int				i;
+	int	i;
 
-	str = (unsigned char *)s;
-	x = (unsigned char)c;
 	i = 0;
-	while (str[i])
-		++i;
+	while (s[i])
+		i++;
 	while (i >= 0)
 	{
-		if (str[i] == x)
-			return ((char *)str + i);
-		--i;
+		if (s[i] == (char)c)
+			return ((char *)(s + i));
+		i--;
 	}
-	return (NULL);
+	return (0);
 }
+
+// int main(void)
+// {
+// char str[]="yasin.gunay.123";
+// char *ret =strrchr(str, '.');
+// printf("or %s\n",ret);
+
+// char str2[]="yasin.gunay.123";
+// char *ret2 =ft_strrchr(str, '.');
+// printf("ft %s\n",ret2);
+// return (0);
+// }
