@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/27 16:49:30 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/27 19:33:37 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/08/08 10:33:23 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,54 +27,34 @@ The substring begins at index ’start’ and is of maximum size ’len’.
 
 #include "libft.h"
 
+#include "libft.h"
+
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char	*substr;
-	size_t	len_s;
-	size_t	len_new;
+	char	*s2;
+	size_t	s_len;
+	size_t	end;
 
 	if (!s)
 		return (0);
-	len_s = ft_strlen(s);
-	len_new = 0;
-	while (s[start + len_new] && len > len_new)
-		len_new++;
-	substr = (char *)malloc(sizeof(*substr) * (len_new + 1));
-	if (substr == NULL)
+	s_len = ft_strlen(s);
+	end = 0;
+	if (start < s_len)
+		end = s_len - start;
+	if (end > len)
+		end = len;
+	s2 = (char *)malloc(sizeof(char) * (end + 1));
+	if (!s2)
 		return (0);
-	if (len_s < start)
-	{
-		ft_memset(substr, 0, len_new + 1);
-		return (substr);
-	}
-	ft_strlcpy(substr, s + start, len_new + 1);
-	return (substr);
+	ft_strlcpy(s2, s + start, end + 1);
+	return (s2);
 }
-
-// char	*ft_substr(char const *s, unsigned int start, size_t len)
-// {
-// 	char	*new_str;
-// 	size_t	i;
-// 	size_t	j;
-
-// 	if (ft_strlen(s) < len)
-// 		len = ft_strlen(s);
-// 	new_str = (char *)malloc(sizeof(char) * (len + 1));
-// 	if (!s || !new_str)
-// 		return (0);
-// 	i = start;
-// 	j = 0;
-// 	while (i < ft_strlen(s) && j < len)
-// 		new_str[j++] = s[i++];
-// 	new_str[j] = '\0';
-// 	return (new_str);
-// }
 
 // int main(void)
 // {
 // 	char name[]="yasin";
 // 	char *result;
-// 	result=ft_substr(name,1,10);
-// 	printf("%s",result);
+// 	result=ft_substr(name,1,3);
+// 	printf("%s\n",result);
 // 	return (0);
 // }
