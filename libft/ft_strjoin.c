@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/27 09:47:12 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/27 10:19:50 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/08/08 08:38:17 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 // result=ft_strjoin(s1,s2);
 
-// printf("%s",result );
+// printf("%s\n",result );
 
 // return(0);
 
