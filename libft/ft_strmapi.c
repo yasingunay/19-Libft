@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 09:05:43 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/28 09:58:40 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/08/08 09:01:00 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,13 +44,13 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (str);
 }
 
-char	ft_lowercase(unsigned int i, char ch)
-{
-	printf("s[%d] is %c\n", i, ch);
-	if (ch >= 65 && ch <= 90)
-		ch = ch + 32;
-	return (ch);
-}
+// char	ft_lowercase(unsigned int i, char ch)
+// {
+// 	printf("s[%d] is %c\n", i, ch);
+// 	if (ch >= 65 && ch <= 90)
+// 		ch = ch + 32;
+// 	return (ch);
+// }
 
 // int main(void)
 // {
