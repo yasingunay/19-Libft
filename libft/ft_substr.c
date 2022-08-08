@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/27 16:49:30 by ygunay            #+#    #+#             */
-/*   Updated: 2022/08/08 10:33:23 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/08/08 10:35:26 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,6 @@ Description
 Allocates (with malloc(3)) and returns a substring from the string ’s’.
 The substring begins at index ’start’ and is of maximum size ’len’.
 */
-
-#include "libft.h"
 
 #include "libft.h"
 
