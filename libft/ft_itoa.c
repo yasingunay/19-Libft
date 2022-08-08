@@ -6,7 +6,7 @@
 /*   By: ygunay <ygunay@student.s19.be>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/28 11:58:29 by ygunay            #+#    #+#             */
-/*   Updated: 2022/07/28 12:25:13 by ygunay           ###   ########.fr       */
+/*   Updated: 2022/08/08 11:59:54 by ygunay           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,56 +24,51 @@ INT_MAX	Maximum value for a variable of type int.	2147483647
 
 #include "libft.h"
 
-static size_t	ft_intlen(int n)
+static int	ft_len(long int nb)
 {
-	unsigned int	i;
+	int	i;
 
 	i = 0;
-	if (n <= 0)
-		++i;
-	while (n != 0)
+	if (nb == 0)
+		return (1);
+	if (nb < 0)
 	{
-		n = n / 10;
+		nb *= -1;
+		i++;
+	}
+	while (nb != 0)
+	{
+		nb /= 10;
 		i++;
 	}
 	return (i);
 }
 
-static char	*ft_addnbr(int n, char *s, int i)
-{
-	unsigned int	nbr;
-
-	if (n < 0)
-	{
-		nbr = -n;
-		s[0] = '-';
-	}
-	else
-		nbr = n;
-	if (nbr >= 10)
-	{
-		ft_addnbr(nbr / 10, s, i - 1);
-		nbr = nbr % 10;
-	}
-	if (nbr < 10)
-	{
-		s[i - 1] = nbr + '0';
-	}
-	return (s);
-}
-
 char	*ft_itoa(int n)
 {
-	char	*s_int;
-	size_t	i;
+	long int	nbr;
+	size_t		len;
+	char		*str;
 
-	i = ft_intlen(n);
-	s_int = (char *)malloc(sizeof(*s_int) * (i + 1));
-	if (NULL == s_int)
+	nbr = n;
+	len = ft_len(nbr);
+	str = (char *) malloc(sizeof(*str) * (len + 1));
+	if (!str)
 		return (NULL);
-	ft_addnbr(n, s_int, i);
-	s_int[i] = '\0';
-	return (s_int);
+	str[len--] = '\0';
+	if (nbr == 0)
+		str[0] = '0';
+	if (nbr < 0)
+	{
+		str[0] = '-';
+		nbr *= -1;
+	}
+	while (nbr > 0)
+	{
+		str[len--] = nbr % 10 + '0';
+		nbr /= 10;
+	}
+	return (str);
 }
 
 // int	main(void)
